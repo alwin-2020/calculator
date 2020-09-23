@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    float a,b;
+    float result=0;
+    char choice;
+    printf("select your choice (+,-,*,/) :");
+    scanf("%c",&choice);
+    printf("enter two numbers :\n");
+    scanf("%f",&a);
+    scanf("%f",&b);
+
+    switch(choice)
+    {
+    case '+':
+        result=a+b;
+        break;
+    case '-':
+        result=a-b;
+        break;
+    case '*':
+        result=a*b;
+        break;
+    case '/':
+        result=a/b;
+        break;
+
+    default :
+        printf("error\n");
+    }
+
+    printf("answer = %.2f",result);
+
+    return 0;
+}
